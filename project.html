@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Best Juice delivery on your doorsteps | juicyg.com</title>
+        <style>
+            body{
+                background-image: url('juicy1.jpg');
+               
+
+            }
+
+            #navbar{
+                display:flex;
+                align-items: center;
+                position: relative;
+                top: 0px;
+
+            }
+
+            #navbar ul{
+                display: flex;
+            }
+
+            #navbar::before{
+                content:"";
+                background-color: black;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+                opacity: 0.6;
+            }
+
+            #navbar ul li{
+                
+                list-style: none;
+                font-size:2 rem;
+            }
+            #navbar ul li a{
+                color: aliceblue;
+                display: block;
+                padding: 3px 22px;
+                border-radius: 20px;
+                text-decoration: none;
+            }
+
+            #navbar ul li a:hover{
+                color:black;
+                background-color: white;
+            }
+
+            #home{
+                display:flex;
+                flex-direction: column;
+                padding: 3px 200px;
+                height: 384px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #home::before{
+                content:"";               
+                position: absolute;
+                
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+                opacity: 0.89;               
+            }
+
+            #home h1{
+                color:rgb(27, 99, 180);
+                text-align: center;
+                font-size: 1.5rem;
+                
+            }
+
+            #home p{
+                
+                justify-content: center;
+                
+            }
+            /*services*/
+            #services{
+                margin:34px;
+                display:flex;
+                
+                
+            }
+            #aman{
+                border:3px solid rgb(42, 124, 124);;
+                padding: 10px;
+                margin:3px 3px;
+                border-radius: 10px;
+                font-size: 1.2rem;       
+                            }
+
+            #kal{
+                border:3px solid rgb(42, 124, 124);
+                padding: 10px;
+                margin:3px 3px;
+                border-radius: 10px;
+                font-size: 1.2rem;   
+
+            }
+
+            #kbi{
+                border:3px solid rgb(42, 124, 124);
+                padding: 10px;
+                margin:3px 3px;
+                border-radius: 10px;
+                font-size: 1.2rem;   
+
+            }
+
+            .h-primary{
+                font-size: 2rem;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;               
+                padding: 12px;  
+                text-align: center;
+                text-decoration-color: rgb(63, 14, 109);
+                        
+
+            }
+
+            .h-secondary{
+                font-size: 1.2rem;
+                padding:12px;
+                text-align: center;
+                background-color: white;
+                border: 2px solid black;
+                border-radius: 5px;
+            }
+
+            .btn{
+                padding: 6px 15px;
+                border: 2px solid black;
+                background-color: bisque;
+                color:black;
+                margin:17px;
+                font-size: 1rem;
+                border-radius: 10px;
+                cursor:pointer;
+            }
+
+            .btn:hover{
+                color:black;
+                background-color: aliceblue;
+            }
+
+            .center{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="navbar">        
+        <ul>
+            <li class="item"><a>Home</a></li>
+            <li class="item"><a>About us</a></li>
+            <li class="item"><a>Contact</a></li>
+            <li class="item"><a>Services</a></li>
+        </ul>
+        </nav>
+
+        <section id="home">
+            <h1 class="h-primary" style="text-decoration:underline;" >Welcome to my project!</h1>
+            <p style="color:rgb(42, 124, 124)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet assumenda necessitatibus quibusdam debitis culpa voluptatum?</p>
+            <p style="color:rgb(27, 119, 119);">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur deserunt amet voluptatem odit, cupiditate possimus itaque ipsa aliquid ex molestiae.</p>
+            <button class="btn">Order now</button>
+        </section>
+
+        <section class="services">
+            <h1 class="h-primary center" style="color:rgb(35, 87, 199)">Our services</h1>
+            <div id="services">
+                <div class="box" id="aman">
+                    <h2 class="h-secondary"  style="text-decoration:underline">Juice Orders</h2>
+                    <p class="center" style="color:white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos dolor fuga perferendis explicabo. Corporis, magni? Quos culpa ex vel perferendis laborum necessitatibus, a consequatur quibusdam.</p>
+
+                </div>
+                <div class="box" id="kal">
+                    <h2 class="h-secondary" style="text-decoration:underline">New experience</h2>
+                    <p class="center " style="color: white;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos dolor fuga perferendis explicabo. Corporis, magni? Quos culpa ex vel perferendis laborum necessitatibus, a consequatur quibusdam.</p>
+
+                </div>
+                <div class="box" id="kbi">
+                    <h2 class="h-secondary"  style="text-decoration:underline">Delivery on the go</h2>
+                    <p class="center" style="color: white;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos dolor fuga perferendis explicabo. Corporis, magni? Quos culpa ex vel perferendis laborum necessitatibus, a consequatur quibusdam.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="center" style="color: white;">
+                Copyright &copy; www.juicyg.com All rights reserved!
+            </div>
+        </footer>
+    </body>
+</html>
